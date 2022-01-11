@@ -20,6 +20,8 @@ angular.module('QuepidApp')
       // disable IE ajax request caching
       $httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
 
+      $httpProvider.defaults.withCredentials = true;
+
       $locationProvider.html5Mode(true);
 
       $routeProvider
